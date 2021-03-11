@@ -6,6 +6,7 @@
   "description": "A.I.D.A, Artificially Intelligent Digital Assistant",
   "dependencies": {
     "hubot": "^3.3.2",
+    "hubot-bucket": "^0.2.3",
     "hubot-diagnostics": "^1.0.0",
     "hubot-discord": "^2.1.0",
     "hubot-google-images": "^0.2.7",
