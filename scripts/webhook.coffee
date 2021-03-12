@@ -7,7 +7,7 @@
 module.exports = (robot) ->
     robot.router.post '/incoming/:room', (req, res) ->
         room = req.params.room
-        data = JSON.parse req.body.payload
+        data = req.body.payload != null ? JSON.parse(req.body.payload) : req.body;
         secret = data.secret
 
         robot.messageRoom room, "this is the payload: #{data}"
